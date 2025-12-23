@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium IPTV - Streaming de Qualidade</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-play-circle"></i>
+                    <span>Premium IPTV</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#channels">Canais</a></li>
+                    <li><a href="#plans">Planos</a></li>
+                    <li><a href="#features">Recursos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1>Streaming Premium em Qualidade 4K</h1>
+                    <p>Assista a seus programas favoritos em qualquer dispositivo, a qualquer hora, em qualquer lugar</p>
+                    <button class="btn btn-primary" onclick="document.getElementById('plans').scrollIntoView({behavior: 'smooth'})">
+                        Começar Agora
+                    </button>
+                </div>
+                <div class="hero-image">
+                    <img src="images/iptv-hero.png" alt="Premium IPTV Streaming">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Channels Section -->
+    <section id="channels" class="channels">
+        <div class="container">
+            <h2>Milhares de Canais Disponíveis</h2>
+            <p class="section-subtitle">Acesso a canais de TV, filmes, séries e muito mais</p>
+            
+            <div class="channels-grid">
+                <div class="channel-card">
+                    <img src="images/iptv-channels.png" alt="Catálogo de Canais">
+                    <h3>Conteúdo Variado</h3>
+                    <p>Filmes, séries, esportes, notícias e documentários</p>
+                </div>
+                <div class="channel-card">
+                    <img src="images/iptv-device.png" alt="Multi-dispositivos">
+                    <h3>Multi-Dispositivos</h3>
+                    <p>Assista em TV, celular, tablet ou computador</p>
+                </div>
+                <div class="channel-card">
+                    <img src="images/iptv-security.png" alt="Segurança">
+                    <h3>Segurança Garantida</h3>
+                    <p>Criptografia de ponta a ponta e proteção de dados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="plans">
+        <div class="container">
+            <h2>Escolha Seu Plano</h2>
+            <p class="section-subtitle">Planos flexíveis para todos os orçamentos</p>
+            
+            <div class="plans-grid">
+                <!-- Basic Plan -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Básico</h3>
+                        <span class="popular-badge">Mais Popular</span>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">R$</span>
+                        <span class="amount">29</span>
+                        <span class="period">/mês</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 500+ Canais</li>
+                        <li><i class="fas fa-check"></i> 1 Dispositivo Simultâneo</li>
+                        <li><i class="fas fa-check"></i> HD Quality</li>
+                        <li><i class="fas fa-check"></i> Suporte 24/7</li>
+                        <li><i class="fas fa-times"></i> Gravação de Programas</li>
+                    </ul>
+                    <button class="btn btn-secondary">Assinar Agora</button>
+                </div>
+
+                <!-- Standard Plan -->
+                <div class="plan-card featured">
+                    <div class="plan-header">
+                        <h3>Padrão</h3>
+                        <span class="recommended-badge">Recomendado</span>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">R$</span>
+                        <span class="amount">49</span>
+                        <span class="period">/mês</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 1000+ Canais</li>
+                        <li><i class="fas fa-check"></i> 1 Dispositivos Simultâneos</li>
+                        <li><i class="fas fa-check"></i> Full HD Quality</li>
+                        <li><i class="fas fa-check"></i> Suporte Prioritário</li>
+                        <li><i class="fas fa-check"></i> Gravação de Programas</li>
+                    </ul>
+                    <button class="btn btn-primary">Assinar Agora</button>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Premium</h3>
+                        <span class="elite-badge">Elite</span>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">R$</span>
+                        <span class="amount">79</span>
+                        <span class="period">/mês</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 2000+ Canais</li>
+                        <li><i class="fas fa-check"></i> 5 Dispositivos Simultâneos</li>
+                        <li><i class="fas fa-check"></i> 4K Ultra HD</li>
+                        <li><i class="fas fa-check"></i> Suporte VIP 24/7</li>
+                        <li><i class="fas fa-check"></i> Gravação Ilimitada</li>
+                    </ul>
+                    <button class="btn btn-secondary">Assinar Agora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Por Que Escolher Premium IPTV?</h2>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Velocidade</h3>
+                    <p>Streaming sem buffering com tecnologia de ponta</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Segurança</h3>
+                    <p>Proteção total com criptografia de dados</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global</h3>
+                    <p>Acesso a conteúdo de todo o mundo</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Compatível</h3>
+                    <p>Funciona em todos os dispositivos</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Suporte</h3>
+                    <p>Atendimento ao cliente 24/7</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Qualidade</h3>
+                    <p>Conteúdo em 4K Ultra HD</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="support">
+        <div class="container">
+            <div class="support-content">
+                <div class="support-text">
+                    <h2>Suporte Profissional 24/7</h2>
+                    <p>Nossa equipe está sempre pronta para ajudar você com qualquer dúvida ou problema</p>
+                    <ul class="support-list">
+                        <li><i class="fas fa-check-circle"></i> Chat ao vivo instantâneo</li>
+                        <li><i class="fas fa-check-circle"></i> Email de suporte</li>
+                        <li><i class="fas fa-check-circle"></i> Telefone dedicado</li>
+                        <li><i class="fas fa-check-circle"></i> Base de conhecimento completa</li>
+                    </ul>
+                </div>
+                <div class="support-image">
+                    <img src="images/iptv-support.png" alt="Suporte ao Cliente">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p class="section-subtitle">Dúvidas? Estamos aqui para ajudar</p>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>suporte@premiumiptv.com</p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telefone</h3>
+                    <p>+55 (11) 3000-0000</p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Localização</h3>
+                    <p>São Paulo, Brasil</p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Horário</h3>
+                    <p>24 horas, 7 dias por semana</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Premium IPTV</h4>
+                    <p>Sua plataforma de streaming premium de confiança</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#channels">Canais</a></li>
+                        <li><a href="#plans">Planos</a></li>
+                        <li><a href="#features">Recursos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Termos de Serviço</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Premium IPTV. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
