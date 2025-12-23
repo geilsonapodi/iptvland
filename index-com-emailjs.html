@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium IPTV - Streaming de Qualidade</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
+    <style>
+        /* Estilos do Formulário de Contato */
+        .contact-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #050812 0%, #0a0e27 100%);
+        }
+
+        .contact-section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffffff 0%, #00d4ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .contact-section > .container > p {
+            text-align: center;
+            color: #b0b8d4;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #1a1f3a;
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #2a3050;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            background: #0a0e27;
+            border: 1px solid #2a3050;
+            border-radius: 8px;
+            color: #ffffff;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #666;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #0066ff;
+            box-shadow: 0 0 10px rgba(0, 102, 255, 0.3);
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #0066ff, #00d4ff);
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .contact-form button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 102, 255, 0.3);
+        }
+
+        .contact-form button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .form-message {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .form-message.success {
+            background: rgba(0, 217, 126, 0.1);
+            border: 1px solid #00d97e;
+            color: #00d97e;
+            display: block;
+        }
+
+        .form-message.error {
+            background: rgba(255, 51, 102, 0.1);
+            border: 1px solid #ff3366;
+            color: #ff3366;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-play-circle"></i>
+                    <span>Premium IPTV</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#canais">Canais</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Premium IPTV</h1>
+                <p>Streaming de Qualidade em Alta Definição</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('planos').scrollIntoView({behavior: 'smooth'})">
+                        <i class="fas fa-play"></i> Assinar Agora
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Channels Section -->
+    <section id="canais" class="channels">
+        <div class="container">
+            <h2>📺 Canais Disponíveis</h2>
+            <p class="section-subtitle">Acesso a centenas de canais em alta qualidade</p>
+            
+            <div class="channels-grid">
+                <div class="channel-card">
+                    <i class="fas fa-film"></i>
+                    <h3>Filmes</h3>
+                    <p>Últimos lançamentos e clássicos</p>
+                </div>
+                <div class="channel-card">
+                    <i class="fas fa-tv"></i>
+                    <h3>Séries</h3>
+                    <p>Séries exclusivas e populares</p>
+                </div>
+                <div class="channel-card">
+                    <i class="fas fa-futbol"></i>
+                    <h3>Esportes</h3>
+                    <p>Transmissões ao vivo 24/7</p>
+                </div>
+                <div class="channel-card">
+                    <i class="fas fa-newspaper"></i>
+                    <h3>Notícias</h3>
+                    <p>Canais de notícias nacionais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="planos" class="plans">
+        <div class="container">
+            <h2>💰 Nossos Planos</h2>
+            <p class="section-subtitle">Escolha o plano perfeito para você</p>
+            
+            <div class="plans-grid">
+                <!-- Basic -->
+                <div class="plan-card">
+                    <h3>Básico</h3>
+                    <p class="price"><span class="amount">29</span><span class="period">/mês</span></p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> 100+ Canais</li>
+                        <li><i class="fas fa-check"></i> HD Quality</li>
+                        <li><i class="fas fa-check"></i> 1 Dispositivo</li>
+                        <li><i class="fas fa-times"></i> Suporte Email</li>
+                    </ul>
+                    <button class="btn btn-primary">Assinar</button>
+                </div>
+
+                <!-- Standard -->
+                <div class="plan-card featured">
+                    <div class="badge">Mais Popular</div>
+                    <h3>Padrão</h3>
+                    <p class="price"><span class="amount">49</span><span class="period">/mês</span></p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> 300+ Canais</li>
+                        <li><i class="fas fa-check"></i> Full HD Quality</li>
+                        <li><i class="fas fa-check"></i> 3 Dispositivos</li>
+                        <li><i class="fas fa-check"></i> Suporte Chat</li>
+                    </ul>
+                    <button class="btn btn-primary">Assinar</button>
+                </div>
+
+                <!-- Premium -->
+                <div class="plan-card">
+                    <h3>Premium</h3>
+                    <p class="price"><span class="amount">79</span><span class="period">/mês</span></p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> 500+ Canais</li>
+                        <li><i class="fas fa-check"></i> 4K Quality</li>
+                        <li><i class="fas fa-check"></i> 5 Dispositivos</li>
+                        <li><i class="fas fa-check"></i> Suporte 24/7</li>
+                    </ul>
+                    <button class="btn btn-primary">Assinar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <h2>📧 Entre em Contato</h2>
+            <p>Envie uma mensagem e responderemos em breve!</p>
+            
+            <form id="contactForm" class="contact-form">
+                <div id="formMessage" class="form-message"></div>
+
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" name="subject" placeholder="Qual é o assunto?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" placeholder="Sua mensagem aqui..." rows="5" required></textarea>
+                </div>
+
+                <button type="submit" id="submitBtn">
+                    <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Premium IPTV</h4>
+                    <p>Seu serviço de streaming confiável</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#canais">Canais</a></li>
+                        <li><a href="#planos">Planos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Email: contato@iptv.com</p>
+                    <p>Tel: +55 (11) 0000-0000</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Premium IPTV. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Inicializar EmailJS
+        // IMPORTANTE: Substitua pela sua chave pública do EmailJS
+        emailjs.init("YOUR_PUBLIC_KEY_HERE");
+
+        // Enviar formulário
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const submitBtn = document.getElementById('submitBtn');
+            const formMessage = document.getElementById('formMessage');
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+
+            const templateParams = {
+                to_email: "seu-email@gmail.com", // Substitua pelo seu email
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+
+            emailjs.send(
+                "SERVICE_ID",      // Substitua pelo seu Service ID
+                "TEMPLATE_ID",     // Substitua pelo seu Template ID
+                templateParams
+            ).then(function(response) {
+                formMessage.className = 'form-message success';
+                formMessage.innerHTML = '<i class="fas fa-check-circle"></i> Mensagem enviada com sucesso! Responderemos em breve.';
+                document.getElementById('contactForm').reset();
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar Mensagem';
+                
+                setTimeout(() => {
+                    formMessage.style.display = 'none';
+                }, 5000);
+            }, function(error) {
+                formMessage.className = 'form-message error';
+                formMessage.innerHTML = '<i class="fas fa-exclamation-circle"></i> Erro ao enviar: ' + JSON.stringify(error);
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar Mensagem';
+            });
+        });
+    </script>
+</body>
+</html>
